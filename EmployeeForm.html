@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- make employee information form with fields like First Name, Last name, Gender, Experience(in years),Skill Set and 2 button at right bottom for clear and submit -->
+    <h1>EMPLOYEE INFORMATION</h1>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="lname" id="lnamelabel">Last name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <br><br>
+
+        <div class="row">
+            <div class="column">
+                <p id="Gender">Gender:</p>
+                <input type="radio" id="Male" name="Gender" value="Male" required>
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label>
+            </div>
+            <div class="column">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="Experience" id="exp">Experience(in years):</label>
+                <select name="Experience" required>
+                    <option></option>
+                    <option value="0-5yrs">0-5yrs</option>
+                    <option value="5-10yrs">5-10yrs</option>
+                    <option value="10-15yrs">10-15yrs</option>
+                    <option value="15-20yrs">15-20yrs</option>
+                </select>
+
+            </div>
+        </div>
+        <br>
+
+        <label for="skill-set">Skill Set:</label><br><br>
+        <textarea id="skill-set" name="skill-set" rows="4" cols="60" required
+            placeholder="Enter your skill set here...(seperated by commas)"></textarea>
+        <br><br>
+
+        <input type="reset" value="Clear">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

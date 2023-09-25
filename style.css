@@ -1,0 +1,110 @@
+/* make the background color white */
+body {
+    background-color: white;
+}
+
+/* center the form and set its width to 50% */
+form {
+    margin: 0 auto;
+    width: 43%;
+    /* add a border for the form */
+    border: 2px solid grey;
+    /* add some padding for the form */
+    padding: 20px;
+}
+#lnamelabel{
+    margin-left: 10px;
+}
+
+/* make the input fields and buttons have some padding and border */
+input, select, textarea {
+    padding: 5px;
+    /* margin-bottom: 5px; */
+    border: 1px solid grey;
+}
+
+/* make the labels bold and left-aligned */
+label, #Gender {
+    font-weight: bold;
+    /* margin: 5px 0px; */
+    /* display: block; */
+    text-align: left;
+}
+
+/* make the heading larger and center-aligned */
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* make the reset and submit buttons aligned to the right */
+input[type=reset], input[type=submit] {
+    float: right;
+}
+
+/* clear the floats after the buttons */
+form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* add some hover effects and transitions to the input fields */
+input:hover, select:hover, textarea:hover {
+    background-color: #f0f0f0;
+    border-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+/* add some hover effects and transitions to the buttons */
+input[type=reset]:hover, input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* add some active effects and transitions to the buttons */
+input[type=reset]:active, input[type=submit]:active {
+    transform: rotate(5deg);
+    transition: all 0.3s ease-in-out;
+}
+
+/* use a consistent font family */
+form {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* use media queries to make the form responsive */
+@media (max-width: 768px) {
+    /* change the layout of the form elements for smaller screens */
+    form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* reduce the padding of the form for smaller screens */
+        padding: 10px;
+    }
+
+    /* change the font size of the heading for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* change the padding of the form elements for smaller screens */
+    input, select, textarea {
+        padding: 5px;
+    }
+}
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
